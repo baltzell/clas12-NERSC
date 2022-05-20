@@ -4,7 +4,7 @@ This directory also contains symlinks at JLab to the files below, so one could c
 
 `/cache/clas12/rg-b/production/decoded/006302`
 
-There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 logical cores, assuming scaling, that should be about half an hour for one 4 GB file on an Intel Xeon Gold 6130.  (My math yesterday was missing a couple factors:)  One thing I wanted to do is run some scaling tests, 16->256, but the same file can just be read repeatedly for that.
+There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 logical cores, assuming scaling, that should be about half an hour for one 4 GB file on an Intel Xeon Gold 6130.  One thing I wanted to do is run some scaling tests, 16->256, but the same file can just be read repeatedly for that.
 
 ## Software
 
