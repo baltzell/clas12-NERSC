@@ -8,7 +8,7 @@ There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 lo
 
 ## Software
 
-This is the CLARA installation to use and contains COATJAVA version 8.0.0:
+This is the CLARA installation to use, and it contains COATJAVA version 8.0.0:
 
 `/cvmfs/oasis.opensciencegrid.org/jlab/hallb/clas12/soft/linux-64/clara/5.0.2_8.0.0/`
 
