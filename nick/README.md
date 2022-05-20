@@ -21,7 +21,9 @@ The environment variable `CLARA_HOME` must be set to the absolute path to that d
 
 And then we set `CCDB_CONNECTION` and `RCDB_CONNECTION` environment variables to:
 
-`sqlite:///$PATH_TO_SQLITE` (3 slashes before the path, so that's 4 total for an absolute path)
+`sqlite:///$PATH_TO_SQLITE`
+
+That's 3 slashes before the path, so a total of 4 total for an absolute path.
 
 ## Config File
 
