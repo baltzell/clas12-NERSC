@@ -1,4 +1,4 @@
-This directory also contains symlinks at JLab to the files below, so one could clone it and access/copy the files that way if that's easier.
+This directory also contains symlinks at JLab to the files below, so one could clone it and access/copy the files that way if that's easier.  Stuff from CVMFS can be read directly, or copied locally if that is more efficient.
 
 ## Raw Data
 
