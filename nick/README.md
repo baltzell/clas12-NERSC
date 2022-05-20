@@ -1,10 +1,10 @@
-This directory also contains symlinks at JLab to the files below, so one could clone it and access/copy the files that way if that's easier.  Stuff from CVMFS can be read directly, or copied locally if that is more efficient.
+The stuff below from CVMFS can be read directly in the job, or copied locally at NERSC if that is more efficient.  This repository also contains convenience symlinks valid on JLab machines to all the stuff below, so one could clone it at JLab and access/copy the files that way. 
 
 ## Raw Data
 
 `/cache/clas12/rg-b/production/decoded/006302`
 
-There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 logical cores, assuming scaling, that should be about half an hour for one 4 GB file on an Intel Xeon Gold 6130.  One thing I wanted to do is run some scaling tests, 16->256, but the same file can just be read repeatedly for that.
+There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 logical cores, assuming scaling, that should be about half an hour for one 4 GB file on an Intel Xeon Gold 6130.  So, really copying only a couple files to NERSC are necessary for basic tests.  One thing I wanted to do is run some scaling tests, 16->256, but the same file can just be read repeatedly for that.
 
 ## Software
 
