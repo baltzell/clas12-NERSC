@@ -4,7 +4,7 @@ This directory also contains symlinks at JLab to the files below, so one could c
 
 `/cache/clas12/rg-b/production/decoded/006302`
 
-There's 2 TB total there, 4 GB per file, 350k events per file.  At 256 logical cores, assuming scaling, that should be about half an hour for one 4 GB file on an Intel Xeon Gold 6130.  (My math yesterday was missing a couple factors:)  One thing I wanted to do is run some scaling tests, 16->256, but the same file can just be read repeatedly for that.
+There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 logical cores, assuming scaling, that should be about half an hour for one 4 GB file on an Intel Xeon Gold 6130.  (My math yesterday was missing a couple factors:)  One thing I wanted to do is run some scaling tests, 16->256, but the same file can just be read repeatedly for that.
 
 ## Software
 
@@ -24,11 +24,11 @@ And then we set `CCDB_CONNECTION` and `RCDB_CONNECTION` environment variables to
 
 ## Config File
 
-`data-ai.yaml` is the configuration file for CLARA.
+[data-ai.yaml](data-ai.yaml) is the configuration file for CLARA, configured for the RG-B data set above.
 
 ## Job Command
 
-clara.sh in this repo, originates from https://github.com/baltzell/clas12-workflow/blob/master/lib/clas12/scripts/clara.sh
+[clara.sh](clara.sh) in this repo, originates from https://github.com/baltzell/clas12-workflow/blob/master/lib/clas12/scripts/clara.sh
 
 It currently expects any input HIPO files to process to be in the current working directory, and it will process all of them, making one output file for each input file.  It currently puts the output files in the current working directory, prefixed with `rec_`.
 
