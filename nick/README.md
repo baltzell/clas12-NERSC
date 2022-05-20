@@ -38,4 +38,4 @@ Its `-y` option is the path to the above YAML file, and `-t` is the number of th
 
 ## More info
 
-Here's a [spreadsheet on CLAS12 processing rates on JLab's farm](https://jeffersonlab-my.sharepoint.com/:x:/g/personal/baltzell_jlab_org/EU096WRXcyBLl_ApLfSCuvoBiwsPFfBN_0enCzU3dFV6rw?e=kB44Sj).
+Here's a [spreadsheet on CLAS12 processing rates on JLab's farm](https://jeffersonlab-my.sharepoint.com/:x:/g/personal/baltzell_jlab_org/EU096WRXcyBLl_ApLfSCuvoBiwsPFfBN_0enCzU3dFV6rw?e=kB44Sj) (link expires in July).
