@@ -8,10 +8,11 @@ There's 2 TB of RG-B data there, 4 GB per file, 350k events per file.  At 256 lo
 
 ## Software
 
-`/cvmfs/oasis.opensciencegrid.org/jlab/hallb/clas12/soft/linux-64/jdk/17.0.2`
+This is the CLARA installation to use (version 5.0.2 with COATJAVA version 8.0.0):
+
 `/cvmfs/oasis.opensciencegrid.org/jlab/hallb/clas12/soft/linux-64/clara/5.0.2_8.0.0/`
 
-`JAVA_HOME` gets set to the JDK directory, `$JAVA_HOME/bin` added to `$PATH`, and `CLARA_HOME` set to the CLARA directory.
+The environment variable `CLARA_HOME` should be the absolute path to that directory, and then `JAVA_HOME` should be set to `$CLARA_HOME/jre/linux-64/jre` and `$JAVA_HOME/bin` added to `$PATH`.
 
 ## Databases
 
