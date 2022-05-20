@@ -26,6 +26,8 @@ And then we set `CCDB_CONNECTION` and `RCDB_CONNECTION` environment variables to
 
 [data-ai.yaml](data-ai.yaml) is the configuration file for CLARA, configured for the RG-B data set above.
 
+**_Note, the schema_dir in the YAML will need to be modified to be the absolute path to the dst directory at $CLARA_HOME/plugins/clas12/etc/bankdefs/hipo4/singles/dst..., without using an environment variable._**
+
 ## Job Command
 
 [clara.sh](clara.sh) in this repo, originates from https://github.com/baltzell/clas12-workflow/blob/master/lib/clas12/scripts/clara.sh
