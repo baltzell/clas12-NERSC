@@ -1,4 +1,4 @@
-The stuff below from CVMFS can be read directly in the job, or copied locally at NERSC if that is more efficient.  This repository also contains convenience symlinks valid on JLab machines to all the stuff below, so one could clone it at JLab and access/copy the files that way. 
+The stuff below from CVMFS can be read directly in the job, or copied locally at NERSC if that is more efficient.  The few, necessary environment variables should be updated accordingly.  This repository also contains convenience symlinks valid on JLab machines to all the stuff below, so one could clone it at JLab and access/copy the files that way. 
 
 ## Raw Data
 
