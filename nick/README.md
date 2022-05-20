@@ -34,4 +34,8 @@ It currently expects any input HIPO files to process to be in the current workin
 
 Its -y option is the path to the above YAML file, and -t is the number of threads.
 
+## More info
 
+In case you're interested, here's my spreadsheet on processing rates at JLab:
+
+https://jeffersonlab-my.sharepoint.com/:x:/g/personal/baltzell_jlab_org/EU096WRXcyBLl_ApLfSCuvoBiwsPFfBN_0enCzU3dFV6rw?e=kB44Sj
