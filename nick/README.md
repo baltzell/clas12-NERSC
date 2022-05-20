@@ -23,7 +23,7 @@ And then we set `CCDB_CONNECTION` and `RCDB_CONNECTION` environment variables to
 
 `sqlite:///$PATH_TO_SQLITE`
 
-That's 3 slashes before the path, so a total of 4 total for an absolute path.
+That's 3 slashes before the path, resulting in 4 consecutive slashes for an absolute path.
 
 ## Config File
 
