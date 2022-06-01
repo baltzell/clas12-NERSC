@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+function check_tmux()
+{
+    command -v tmux >/dev/null 2>&1 ||
+        { echo "tmux it's not installed. Aborting."; exit 1; }
+}
+
+
+function get_fe_host()
+{
+    hostname -s
+}
+
+
+function get_mail()
+{
+    local test_dir=$1
+    if [[ -f $test_dir/mail ]]; then
+        cat "$test_dir/mail"
+    else
+        echo "$USER@jlab.org"
+    fi
+}

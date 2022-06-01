@@ -1,0 +1,1661 @@
+==========================================
+            CLARA stress-test
+==========================================
+ CLARA home       = /local/scratch/gurjyan/work/clara/myClara
+ CLARA version    = 4.3-SNAPSHOT (build v4.2-1370-gb228b83aab)
+ Start time       = 2022-01-19 10:43:04
+ Host             = clara1601
+ Services file    = /local/scratch/gurjyan/work/clara/user_data/config/scaling.yaml
+ Input file       = /local/scratch/gurjyan/work/clara/user_data/data/input/clas_005038.1231.hipo
+ Output file      = /local/scratch/gurjyan/work/clara/user_data/data/output/out_clas_005038.1231.hipo
+==========================================
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:43:05
+ Threads            = 1
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:43:05.930: Waiting for local node...
+2022-01-19 10:43:06.107: Start processing on 129.57.70.24...
+2022-01-19 10:43:06.108: Searching services in 129.57.70.24...
+2022-01-19 10:43:06.166: All services already deployed on 129.57.70.24
+2022-01-19 10:43:06.440: Configuring services on 129.57.70.24...
+2022-01-19 10:43:15.699: All services configured on 129.57.70.24
+2022-01-19 10:43:15.701: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:43:15.758: Using 1 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:43:54.578: Processed  500 events in  38.82 s   average event time =    77.64 ms   [ total   500 events    38.82 s ]
+2022-01-19 10:44:31.655: Processed  500 events in  37.08 s   average event time =    74.16 ms   [ total  1000 events    75.90 s ]
+2022-01-19 10:44:31.658: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 75.90 ms
+2022-01-19 10:44:32.184: Benchmark results:
+2022-01-19 10:44:32.185:   READER           1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:44:32.186:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:44:32.187:   FTCAL            1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 10:44:32.189:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:44:32.190:   FTEB             1000 events    total time =     0.07 s    average event time =    0.07 ms
+2022-01-19 10:44:32.191:   DCCR             1000 events    total time =    61.44 s    average event time =   61.44 ms
+2022-01-19 10:44:32.192:   FTOFHB           1000 events    total time =     1.05 s    average event time =    1.05 ms
+2022-01-19 10:44:32.193:   EC               1000 events    total time =     1.15 s    average event time =    1.15 ms
+2022-01-19 10:44:32.194:   CTOF             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:44:32.195:   CND              1000 events    total time =     0.64 s    average event time =    0.64 ms
+2022-01-19 10:44:32.196:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:44:32.197:   HTCC             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:44:32.198:   LTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:44:32.199:   EBHB             1000 events    total time =     0.57 s    average event time =    0.57 ms
+2022-01-19 10:44:32.199:   FMT              1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:44:32.200:   FTOFTB           1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:44:32.201:   EBTB             1000 events    total time =     0.55 s    average event time =    0.55 ms
+2022-01-19 10:44:32.202:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:44:32.203:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:44:32.203:   WRITER           1000 events    total time =     3.28 s    average event time =    3.28 ms
+2022-01-19 10:44:32.204:   TOTAL            1000 events    total time =    70.74 s    average event time =   70.74 ms
+2022-01-19 10:44:32.205: Average processing time  =   75.90 ms
+2022-01-19 10:44:32.205: Total processing time    =   75.90 s
+2022-01-19 10:44:32.206: Total orchestrator time  =   86.64 s
+2022-01-19 10:44:32.206: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:44:34
+ Threads            = 1
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:44:34.602: Waiting for local node...
+2022-01-19 10:44:34.769: Start processing on 129.57.70.24...
+2022-01-19 10:44:34.770: Searching services in 129.57.70.24...
+2022-01-19 10:44:34.840: All services already deployed on 129.57.70.24
+2022-01-19 10:44:35.100: Configuring services on 129.57.70.24...
+2022-01-19 10:44:44.032: All services configured on 129.57.70.24
+2022-01-19 10:44:44.057: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:44:44.115: Using 1 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:45:22.973: Processed  500 events in  38.86 s   average event time =    77.72 ms   [ total   500 events    38.86 s ]
+2022-01-19 10:45:59.856: Processed  500 events in  36.88 s   average event time =    73.77 ms   [ total  1000 events    75.74 s ]
+2022-01-19 10:45:59.859: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 75.75 ms
+2022-01-19 10:46:00.334: Benchmark results:
+2022-01-19 10:46:00.335:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:46:00.336:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:46:00.337:   FTCAL            1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:46:00.338:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:46:00.339:   FTEB             1000 events    total time =     0.07 s    average event time =    0.07 ms
+2022-01-19 10:46:00.341:   DCCR             1000 events    total time =    61.43 s    average event time =   61.43 ms
+2022-01-19 10:46:00.342:   FTOFHB           1000 events    total time =     1.03 s    average event time =    1.03 ms
+2022-01-19 10:46:00.343:   EC               1000 events    total time =     1.16 s    average event time =    1.16 ms
+2022-01-19 10:46:00.344:   CTOF             1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:46:00.345:   CND              1000 events    total time =     0.64 s    average event time =    0.64 ms
+2022-01-19 10:46:00.346:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:46:00.347:   HTCC             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:46:00.347:   LTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:46:00.348:   EBHB             1000 events    total time =     0.56 s    average event time =    0.56 ms
+2022-01-19 10:46:00.349:   FMT              1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:46:00.350:   FTOFTB           1000 events    total time =     0.98 s    average event time =    0.98 ms
+2022-01-19 10:46:00.350:   EBTB             1000 events    total time =     0.54 s    average event time =    0.54 ms
+2022-01-19 10:46:00.351:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:46:00.352:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:46:00.352:   WRITER           1000 events    total time =     3.37 s    average event time =    3.37 ms
+2022-01-19 10:46:00.353:   TOTAL            1000 events    total time =    70.75 s    average event time =   70.75 ms
+2022-01-19 10:46:00.354: Average processing time  =   75.75 ms
+2022-01-19 10:46:00.354: Total processing time    =   75.75 s
+2022-01-19 10:46:00.355: Total orchestrator time  =   86.06 s
+2022-01-19 10:46:00.355: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:46:02
+ Threads            = 1
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:46:02.772: Waiting for local node...
+2022-01-19 10:46:02.941: Start processing on 129.57.70.24...
+2022-01-19 10:46:02.941: Searching services in 129.57.70.24...
+2022-01-19 10:46:02.997: All services already deployed on 129.57.70.24
+2022-01-19 10:46:03.269: Configuring services on 129.57.70.24...
+2022-01-19 10:46:12.966: All services configured on 129.57.70.24
+2022-01-19 10:46:12.993: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:46:13.055: Using 1 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:46:51.646: Processed  500 events in  38.59 s   average event time =    77.19 ms   [ total   500 events    38.59 s ]
+2022-01-19 10:47:28.344: Processed  500 events in  36.70 s   average event time =    73.40 ms   [ total  1000 events    75.29 s ]
+2022-01-19 10:47:28.347: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 75.30 ms
+2022-01-19 10:47:28.868: Benchmark results:
+2022-01-19 10:47:28.869:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:47:28.870:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:47:28.871:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:47:28.872:   FTHODO           1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:47:28.873:   FTEB             1000 events    total time =     0.06 s    average event time =    0.06 ms
+2022-01-19 10:47:28.875:   DCCR             1000 events    total time =    61.19 s    average event time =   61.19 ms
+2022-01-19 10:47:28.876:   FTOFHB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:47:28.877:   EC               1000 events    total time =     1.15 s    average event time =    1.15 ms
+2022-01-19 10:47:28.878:   CTOF             1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:47:28.879:   CND              1000 events    total time =     0.63 s    average event time =    0.63 ms
+2022-01-19 10:47:28.880:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:47:28.881:   HTCC             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:47:28.881:   LTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:47:28.882:   EBHB             1000 events    total time =     0.53 s    average event time =    0.53 ms
+2022-01-19 10:47:28.883:   FMT              1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:47:28.884:   FTOFTB           1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:47:28.885:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:47:28.885:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:47:28.886:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:47:28.887:   WRITER           1000 events    total time =     3.30 s    average event time =    3.30 ms
+2022-01-19 10:47:28.887:   TOTAL            1000 events    total time =    70.31 s    average event time =   70.31 ms
+2022-01-19 10:47:28.888: Average processing time  =   75.30 ms
+2022-01-19 10:47:28.889: Total processing time    =   75.29 s
+2022-01-19 10:47:28.889: Total orchestrator time  =   86.46 s
+2022-01-19 10:47:28.890: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:47:30
+ Threads            = 2
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:47:31.280: Waiting for local node...
+2022-01-19 10:47:31.439: Start processing on 129.57.70.24...
+2022-01-19 10:47:31.440: Searching services in 129.57.70.24...
+2022-01-19 10:47:31.509: All services already deployed on 129.57.70.24
+2022-01-19 10:47:31.768: Configuring services on 129.57.70.24...
+2022-01-19 10:47:41.515: All services configured on 129.57.70.24
+2022-01-19 10:47:41.524: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:47:41.581: Using 2 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:48:02.050: Processed  500 events in  20.47 s   average event time =    40.94 ms   [ total   500 events    20.47 s ]
+2022-01-19 10:48:21.978: Processed  500 events in  19.93 s   average event time =    39.86 ms   [ total  1000 events    40.40 s ]
+2022-01-19 10:48:21.979: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 40.40 ms
+2022-01-19 10:48:22.476: Benchmark results:
+2022-01-19 10:48:22.477:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:48:22.478:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:48:22.479:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:48:22.480:   FTHODO           1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:48:22.481:   FTEB             1000 events    total time =     0.06 s    average event time =    0.06 ms
+2022-01-19 10:48:22.483:   DCCR             1000 events    total time =    63.58 s    average event time =   63.58 ms
+2022-01-19 10:48:22.484:   FTOFHB           1000 events    total time =     1.02 s    average event time =    1.02 ms
+2022-01-19 10:48:22.485:   EC               1000 events    total time =     1.16 s    average event time =    1.16 ms
+2022-01-19 10:48:22.486:   CTOF             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:48:22.487:   CND              1000 events    total time =     0.63 s    average event time =    0.63 ms
+2022-01-19 10:48:22.488:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:48:22.489:   HTCC             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:48:22.489:   LTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:48:22.490:   EBHB             1000 events    total time =     0.53 s    average event time =    0.53 ms
+2022-01-19 10:48:22.491:   FMT              1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:48:22.492:   FTOFTB           1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:48:22.493:   EBTB             1000 events    total time =     0.55 s    average event time =    0.55 ms
+2022-01-19 10:48:22.494:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:48:22.494:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:48:22.495:   WRITER           1000 events    total time =     3.32 s    average event time =    3.32 ms
+2022-01-19 10:48:22.496:   TOTAL            1000 events    total time =    72.76 s    average event time =   72.76 ms
+2022-01-19 10:48:22.496: Average processing time  =   40.40 ms
+2022-01-19 10:48:22.497: Total processing time    =   40.40 s
+2022-01-19 10:48:22.497: Total orchestrator time  =   51.54 s
+2022-01-19 10:48:22.498: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:48:24
+ Threads            = 2
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:48:24.900: Waiting for local node...
+2022-01-19 10:48:25.060: Start processing on 129.57.70.24...
+2022-01-19 10:48:25.061: Searching services in 129.57.70.24...
+2022-01-19 10:48:25.107: All services already deployed on 129.57.70.24
+2022-01-19 10:48:25.363: Configuring services on 129.57.70.24...
+2022-01-19 10:48:34.896: All services configured on 129.57.70.24
+2022-01-19 10:48:34.901: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:48:34.958: Using 2 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:48:55.178: Processed  500 events in  20.22 s   average event time =    40.44 ms   [ total   500 events    20.22 s ]
+2022-01-19 10:49:14.756: Processed  500 events in  19.58 s   average event time =    39.16 ms   [ total  1000 events    39.80 s ]
+2022-01-19 10:49:14.756: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 39.80 ms
+2022-01-19 10:49:15.262: Benchmark results:
+2022-01-19 10:49:15.262:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:49:15.264:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:49:15.266:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:49:15.268:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:49:15.270:   FTEB             1000 events    total time =     0.06 s    average event time =    0.06 ms
+2022-01-19 10:49:15.272:   DCCR             1000 events    total time =    62.35 s    average event time =   62.35 ms
+2022-01-19 10:49:15.273:   FTOFHB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:49:15.275:   EC               1000 events    total time =     1.15 s    average event time =    1.15 ms
+2022-01-19 10:49:15.276:   CTOF             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:49:15.277:   CND              1000 events    total time =     0.63 s    average event time =    0.63 ms
+2022-01-19 10:49:15.279:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:49:15.280:   HTCC             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:49:15.281:   LTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:49:15.282:   EBHB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:49:15.283:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:49:15.284:   FTOFTB           1000 events    total time =     0.96 s    average event time =    0.96 ms
+2022-01-19 10:49:15.285:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:49:15.286:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:49:15.287:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:49:15.288:   WRITER           1000 events    total time =     3.33 s    average event time =    3.33 ms
+2022-01-19 10:49:15.289:   TOTAL            1000 events    total time =    71.48 s    average event time =   71.48 ms
+2022-01-19 10:49:15.290: Average processing time  =   39.80 ms
+2022-01-19 10:49:15.290: Total processing time    =   39.80 s
+2022-01-19 10:49:15.291: Total orchestrator time  =   50.73 s
+2022-01-19 10:49:15.292: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:49:17
+ Threads            = 2
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:49:17.693: Waiting for local node...
+2022-01-19 10:49:17.856: Start processing on 129.57.70.24...
+2022-01-19 10:49:17.857: Searching services in 129.57.70.24...
+2022-01-19 10:49:17.910: All services already deployed on 129.57.70.24
+2022-01-19 10:49:18.173: Configuring services on 129.57.70.24...
+2022-01-19 10:49:27.717: All services configured on 129.57.70.24
+2022-01-19 10:49:27.792: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:49:27.867: Using 2 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:49:47.953: Processed  500 events in  20.09 s   average event time =    40.18 ms   [ total   500 events    20.09 s ]
+2022-01-19 10:50:07.394: Processed  500 events in  19.44 s   average event time =    38.88 ms   [ total  1000 events    39.53 s ]
+2022-01-19 10:50:07.395: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 39.53 ms
+2022-01-19 10:50:07.943: Benchmark results:
+2022-01-19 10:50:07.944:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:50:07.945:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:07.946:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:50:07.947:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:50:07.948:   FTEB             1000 events    total time =     0.06 s    average event time =    0.06 ms
+2022-01-19 10:50:07.949:   DCCR             1000 events    total time =    61.84 s    average event time =   61.84 ms
+2022-01-19 10:50:07.949:   FTOFHB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:50:07.950:   EC               1000 events    total time =     1.16 s    average event time =    1.16 ms
+2022-01-19 10:50:07.951:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:50:07.952:   CND              1000 events    total time =     0.63 s    average event time =    0.63 ms
+2022-01-19 10:50:07.953:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:07.954:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:50:07.954:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:50:07.955:   EBHB             1000 events    total time =     0.53 s    average event time =    0.53 ms
+2022-01-19 10:50:07.956:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:07.956:   FTOFTB           1000 events    total time =     1.00 s    average event time =    1.00 ms
+2022-01-19 10:50:07.957:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:50:07.958:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:50:07.958:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:07.959:   WRITER           1000 events    total time =     3.31 s    average event time =    3.31 ms
+2022-01-19 10:50:07.959:   TOTAL            1000 events    total time =    70.97 s    average event time =   70.97 ms
+2022-01-19 10:50:07.960: Average processing time  =   39.53 ms
+2022-01-19 10:50:07.960: Total processing time    =   39.53 s
+2022-01-19 10:50:07.961: Total orchestrator time  =   50.60 s
+2022-01-19 10:50:07.961: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:50:10
+ Threads            = 4
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:50:10.344: Waiting for local node...
+2022-01-19 10:50:10.505: Start processing on 129.57.70.24...
+2022-01-19 10:50:10.505: Searching services in 129.57.70.24...
+2022-01-19 10:50:10.559: All services already deployed on 129.57.70.24
+2022-01-19 10:50:10.821: Configuring services on 129.57.70.24...
+2022-01-19 10:50:20.093: All services configured on 129.57.70.24
+2022-01-19 10:50:20.167: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:50:20.241: Using 4 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:50:31.045: Processed  500 events in  10.81 s   average event time =  21.61 ms   [ total   500 events    10.81 s ]
+2022-01-19 10:50:41.400: Processed  500 events in  10.36 s   average event time =  20.71 ms   [ total  1000 events    21.16 s ]
+2022-01-19 10:50:41.401: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 21.16 ms
+2022-01-19 10:50:41.911: Benchmark results:
+2022-01-19 10:50:41.912:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:50:41.913:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:41.915:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:50:41.916:   FTHODO           1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:50:41.918:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:50:41.920:   DCCR             1000 events    total time =    61.83 s    average event time =   61.83 ms
+2022-01-19 10:50:41.922:   FTOFHB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:50:41.923:   EC               1000 events    total time =     1.14 s    average event time =    1.14 ms
+2022-01-19 10:50:41.924:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:50:41.926:   CND              1000 events    total time =     0.62 s    average event time =    0.62 ms
+2022-01-19 10:50:41.927:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:41.928:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:50:41.930:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:50:41.931:   EBHB             1000 events    total time =     0.53 s    average event time =    0.53 ms
+2022-01-19 10:50:41.931:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:41.933:   FTOFTB           1000 events    total time =     0.96 s    average event time =    0.96 ms
+2022-01-19 10:50:41.933:   EBTB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 10:50:41.934:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:50:41.935:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:50:41.936:   WRITER           1000 events    total time =     3.22 s    average event time =    3.22 ms
+2022-01-19 10:50:41.937:   TOTAL            1000 events    total time =    70.75 s    average event time =   70.75 ms
+2022-01-19 10:50:41.938: Average processing time  =   21.16 ms
+2022-01-19 10:50:41.938: Total processing time    =   21.16 s
+2022-01-19 10:50:41.939: Total orchestrator time  =   31.92 s
+2022-01-19 10:50:41.940: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:50:44
+ Threads            = 4
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:50:44.328: Waiting for local node...
+2022-01-19 10:50:44.489: Start processing on 129.57.70.24...
+2022-01-19 10:50:44.490: Searching services in 129.57.70.24...
+2022-01-19 10:50:44.559: All services already deployed on 129.57.70.24
+2022-01-19 10:50:44.819: Configuring services on 129.57.70.24...
+2022-01-19 10:50:53.917: All services configured on 129.57.70.24
+2022-01-19 10:50:53.956: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:50:54.009: Using 4 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:51:04.933: Processed  500 events in  10.93 s   average event time =  21.85 ms   [ total   500 events    10.93 s ]
+2022-01-19 10:51:15.749: Processed  500 events in  10.82 s   average event time =  21.63 ms   [ total  1000 events    21.74 s ]
+2022-01-19 10:51:15.749: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 21.74 ms
+2022-01-19 10:51:16.295: Benchmark results:
+2022-01-19 10:51:16.296:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:51:16.298:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:16.299:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:51:16.300:   FTHODO           1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:51:16.301:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:51:16.303:   DCCR             1000 events    total time =    64.57 s    average event time =   64.57 ms
+2022-01-19 10:51:16.304:   FTOFHB           1000 events    total time =     1.03 s    average event time =    1.03 ms
+2022-01-19 10:51:16.305:   EC               1000 events    total time =     1.18 s    average event time =    1.18 ms
+2022-01-19 10:51:16.306:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:51:16.307:   CND              1000 events    total time =     0.63 s    average event time =    0.63 ms
+2022-01-19 10:51:16.308:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:16.309:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:51:16.309:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:51:16.310:   EBHB             1000 events    total time =     0.53 s    average event time =    0.53 ms
+2022-01-19 10:51:16.311:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:16.312:   FTOFTB           1000 events    total time =     1.00 s    average event time =    1.00 ms
+2022-01-19 10:51:16.312:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:51:16.313:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:51:16.314:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:16.315:   WRITER           1000 events    total time =     3.09 s    average event time =    3.09 ms
+2022-01-19 10:51:16.315:   TOTAL            1000 events    total time =    73.48 s    average event time =   73.48 ms
+2022-01-19 10:51:16.316: Average processing time  =   21.74 ms
+2022-01-19 10:51:16.316: Total processing time    =   21.74 s
+2022-01-19 10:51:16.317: Total orchestrator time  =   32.31 s
+2022-01-19 10:51:16.317: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:51:18
+ Threads            = 4
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:51:18.764: Waiting for local node...
+2022-01-19 10:51:18.934: Start processing on 129.57.70.24...
+2022-01-19 10:51:18.935: Searching services in 129.57.70.24...
+2022-01-19 10:51:18.985: All services already deployed on 129.57.70.24
+2022-01-19 10:51:19.243: Configuring services on 129.57.70.24...
+2022-01-19 10:51:28.257: All services configured on 129.57.70.24
+2022-01-19 10:51:28.316: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:51:28.375: Using 4 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:51:39.528: Processed  500 events in  11.16 s   average event time =  22.31 ms   [ total   500 events    11.16 s ]
+2022-01-19 10:51:49.855: Processed  500 events in  10.33 s   average event time =  20.66 ms   [ total  1000 events    21.48 s ]
+2022-01-19 10:51:49.856: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 21.48 ms
+2022-01-19 10:51:50.354: Benchmark results:
+2022-01-19 10:51:50.354:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:51:50.356:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:50.357:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:51:50.358:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:51:50.359:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:51:50.360:   DCCR             1000 events    total time =    62.96 s    average event time =   62.96 ms
+2022-01-19 10:51:50.362:   FTOFHB           1000 events    total time =     0.99 s    average event time =    0.99 ms
+2022-01-19 10:51:50.363:   EC               1000 events    total time =     1.13 s    average event time =    1.13 ms
+2022-01-19 10:51:50.364:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:51:50.365:   CND              1000 events    total time =     0.61 s    average event time =    0.61 ms
+2022-01-19 10:51:50.366:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:50.367:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:51:50.368:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:51:50.369:   EBHB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 10:51:50.370:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:50.370:   FTOFTB           1000 events    total time =     0.96 s    average event time =    0.96 ms
+2022-01-19 10:51:50.371:   EBTB             1000 events    total time =     0.50 s    average event time =    0.50 ms
+2022-01-19 10:51:50.372:   RICH             1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:51:50.373:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:51:50.373:   WRITER           1000 events    total time =     3.31 s    average event time =    3.31 ms
+2022-01-19 10:51:50.374:   TOTAL            1000 events    total time =    71.88 s    average event time =   71.88 ms
+2022-01-19 10:51:50.375: Average processing time  =   21.48 ms
+2022-01-19 10:51:50.375: Total processing time    =   21.48 s
+2022-01-19 10:51:50.376: Total orchestrator time  =   32.00 s
+2022-01-19 10:51:50.377: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:51:52
+ Threads            = 6
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:51:52.782: Waiting for local node...
+2022-01-19 10:51:52.954: Start processing on 129.57.70.24...
+2022-01-19 10:51:52.955: Searching services in 129.57.70.24...
+2022-01-19 10:51:53.020: All services already deployed on 129.57.70.24
+2022-01-19 10:51:53.279: Configuring services on 129.57.70.24...
+2022-01-19 10:52:02.593: All services configured on 129.57.70.24
+2022-01-19 10:52:02.616: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:52:02.672: Using 6 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:52:10.072: Processed  500 events in   7.40 s   average event time =  14.80 ms   [ total   500 events     7.40 s ]
+2022-01-19 10:52:17.313: Processed  500 events in   7.24 s   average event time =  14.48 ms   [ total  1000 events    14.64 s ]
+2022-01-19 10:52:17.314: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 14.65 ms
+2022-01-19 10:52:17.749: Benchmark results:
+2022-01-19 10:52:17.749:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:52:17.750:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:17.752:   FTCAL            1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:52:17.753:   FTHODO           1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:52:17.754:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:52:17.755:   DCCR             1000 events    total time =    60.79 s    average event time =   60.79 ms
+2022-01-19 10:52:17.756:   FTOFHB           1000 events    total time =     1.00 s    average event time =    1.00 ms
+2022-01-19 10:52:17.757:   EC               1000 events    total time =     1.13 s    average event time =    1.13 ms
+2022-01-19 10:52:17.758:   CTOF             1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 10:52:17.759:   CND              1000 events    total time =     0.62 s    average event time =    0.62 ms
+2022-01-19 10:52:17.760:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:17.761:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:52:17.761:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:52:17.762:   EBHB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 10:52:17.763:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:17.764:   FTOFTB           1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:52:17.765:   EBTB             1000 events    total time =     0.50 s    average event time =    0.50 ms
+2022-01-19 10:52:17.766:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:52:17.766:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:17.767:   WRITER           1000 events    total time =     2.91 s    average event time =    2.91 ms
+2022-01-19 10:52:17.768:   TOTAL            1000 events    total time =    69.31 s    average event time =   69.31 ms
+2022-01-19 10:52:17.769: Average processing time  =   14.65 ms
+2022-01-19 10:52:17.769: Total processing time    =   14.65 s
+2022-01-19 10:52:17.770: Total orchestrator time  =   25.32 s
+2022-01-19 10:52:17.770: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:52:19
+ Threads            = 6
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:52:20.008: Waiting for local node...
+2022-01-19 10:52:20.156: Start processing on 129.57.70.24...
+2022-01-19 10:52:20.156: Searching services in 129.57.70.24...
+2022-01-19 10:52:20.189: All services already deployed on 129.57.70.24
+2022-01-19 10:52:20.444: Configuring services on 129.57.70.24...
+2022-01-19 10:52:29.856: All services configured on 129.57.70.24
+2022-01-19 10:52:29.939: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:52:29.996: Using 6 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:52:37.457: Processed  500 events in   7.46 s   average event time =  14.93 ms   [ total   500 events     7.46 s ]
+2022-01-19 10:52:44.572: Processed  500 events in   7.12 s   average event time =  14.23 ms   [ total  1000 events    14.58 s ]
+2022-01-19 10:52:44.572: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 14.58 ms
+2022-01-19 10:52:45.070: Benchmark results:
+2022-01-19 10:52:45.071:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:52:45.072:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:45.073:   FTCAL            1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:52:45.074:   FTHODO           1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:52:45.075:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:52:45.076:   DCCR             1000 events    total time =    60.20 s    average event time =   60.20 ms
+2022-01-19 10:52:45.076:   FTOFHB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:52:45.077:   EC               1000 events    total time =     1.08 s    average event time =    1.08 ms
+2022-01-19 10:52:45.078:   CTOF             1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 10:52:45.079:   CND              1000 events    total time =     0.60 s    average event time =    0.60 ms
+2022-01-19 10:52:45.080:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:45.081:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:52:45.082:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:52:45.083:   EBHB             1000 events    total time =     0.49 s    average event time =    0.49 ms
+2022-01-19 10:52:45.084:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:45.085:   FTOFTB           1000 events    total time =     0.94 s    average event time =    0.94 ms
+2022-01-19 10:52:45.085:   EBTB             1000 events    total time =     0.49 s    average event time =    0.49 ms
+2022-01-19 10:52:45.086:   RICH             1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:52:45.087:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:52:45.088:   WRITER           1000 events    total time =     3.03 s    average event time =    3.03 ms
+2022-01-19 10:52:45.088:   TOTAL            1000 events    total time =    68.72 s    average event time =   68.72 ms
+2022-01-19 10:52:45.089: Average processing time  =   14.58 ms
+2022-01-19 10:52:45.089: Total processing time    =   14.58 s
+2022-01-19 10:52:45.090: Total orchestrator time  =   25.30 s
+2022-01-19 10:52:45.090: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:52:47
+ Threads            = 6
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:52:47.403: Waiting for local node...
+2022-01-19 10:52:47.554: Start processing on 129.57.70.24...
+2022-01-19 10:52:47.555: Searching services in 129.57.70.24...
+2022-01-19 10:52:47.607: All services already deployed on 129.57.70.24
+2022-01-19 10:52:47.870: Configuring services on 129.57.70.24...
+2022-01-19 10:52:56.847: All services configured on 129.57.70.24
+2022-01-19 10:52:56.895: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:52:56.956: Using 6 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:53:04.535: Processed  500 events in   7.58 s   average event time =  15.16 ms   [ total   500 events     7.58 s ]
+2022-01-19 10:53:11.299: Processed  500 events in   6.76 s   average event time =  13.53 ms   [ total  1000 events    14.35 s ]
+2022-01-19 10:53:11.299: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 14.35 ms
+2022-01-19 10:53:11.825: Benchmark results:
+2022-01-19 10:53:11.826:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:53:11.827:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:11.828:   FTCAL            1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:53:11.829:   FTHODO           1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:53:11.830:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:53:11.832:   DCCR             1000 events    total time =    59.36 s    average event time =   59.36 ms
+2022-01-19 10:53:11.841:   FTOFHB           1000 events    total time =     0.98 s    average event time =    0.98 ms
+2022-01-19 10:53:11.843:   EC               1000 events    total time =     1.11 s    average event time =    1.11 ms
+2022-01-19 10:53:11.845:   CTOF             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:53:11.846:   CND              1000 events    total time =     0.61 s    average event time =    0.61 ms
+2022-01-19 10:53:11.848:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:11.850:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:53:11.858:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:53:11.860:   EBHB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 10:53:11.861:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:11.862:   FTOFTB           1000 events    total time =     0.92 s    average event time =    0.92 ms
+2022-01-19 10:53:11.863:   EBTB             1000 events    total time =     0.48 s    average event time =    0.48 ms
+2022-01-19 10:53:11.864:   RICH             1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:53:11.866:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:11.866:   WRITER           1000 events    total time =     2.86 s    average event time =    2.86 ms
+2022-01-19 10:53:11.867:   TOTAL            1000 events    total time =    67.72 s    average event time =   67.72 ms
+2022-01-19 10:53:11.868: Average processing time  =   14.35 ms
+2022-01-19 10:53:11.868: Total processing time    =   14.35 s
+2022-01-19 10:53:11.869: Total orchestrator time  =   24.72 s
+2022-01-19 10:53:11.870: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:53:14
+ Threads            = 8
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:53:14.352: Waiting for local node...
+2022-01-19 10:53:14.520: Start processing on 129.57.70.24...
+2022-01-19 10:53:14.521: Searching services in 129.57.70.24...
+2022-01-19 10:53:14.589: All services already deployed on 129.57.70.24
+2022-01-19 10:53:14.854: Configuring services on 129.57.70.24...
+2022-01-19 10:53:24.041: All services configured on 129.57.70.24
+2022-01-19 10:53:24.116: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:53:24.192: Using 8 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:53:29.175: Processed  500 events in   4.98 s   average event time =   9.97 ms   [ total   500 events     4.98 s ]
+2022-01-19 10:53:33.801: Processed  500 events in   4.63 s   average event time =   9.25 ms   [ total  1000 events     9.61 s ]
+2022-01-19 10:53:33.802: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 9.61 ms
+2022-01-19 10:53:34.245: Benchmark results:
+2022-01-19 10:53:34.246:   READER           1000 events    total time =     0.09 s    average event time =    0.09 ms
+2022-01-19 10:53:34.247:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:34.248:   FTCAL            1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:53:34.249:   FTHODO           1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:53:34.250:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:53:34.252:   DCCR             1000 events    total time =    51.97 s    average event time =   51.97 ms
+2022-01-19 10:53:34.253:   FTOFHB           1000 events    total time =     0.85 s    average event time =    0.85 ms
+2022-01-19 10:53:34.254:   EC               1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:53:34.255:   CTOF             1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:53:34.256:   CND              1000 events    total time =     0.53 s    average event time =    0.53 ms
+2022-01-19 10:53:34.257:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:34.258:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:53:34.259:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:53:34.259:   EBHB             1000 events    total time =     0.43 s    average event time =    0.43 ms
+2022-01-19 10:53:34.260:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:34.261:   FTOFTB           1000 events    total time =     0.82 s    average event time =    0.82 ms
+2022-01-19 10:53:34.262:   EBTB             1000 events    total time =     0.42 s    average event time =    0.42 ms
+2022-01-19 10:53:34.262:   RICH             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:53:34.263:   RTPC             1000 events    total time =     0.00 s    average event time =    0.00 ms
+2022-01-19 10:53:34.264:   WRITER           1000 events    total time =     2.07 s    average event time =    2.07 ms
+2022-01-19 10:53:34.264:   TOTAL            1000 events    total time =    58.84 s    average event time =   58.84 ms
+2022-01-19 10:53:34.265: Average processing time  =    9.61 ms
+2022-01-19 10:53:34.265: Total processing time    =    9.61 s
+2022-01-19 10:53:34.266: Total orchestrator time  =   20.30 s
+2022-01-19 10:53:34.266: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:53:36
+ Threads            = 8
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:53:36.695: Waiting for local node...
+2022-01-19 10:53:36.867: Start processing on 129.57.70.24...
+2022-01-19 10:53:36.868: Searching services in 129.57.70.24...
+2022-01-19 10:53:36.919: All services already deployed on 129.57.70.24
+2022-01-19 10:53:37.188: Configuring services on 129.57.70.24...
+2022-01-19 10:53:45.587: All services configured on 129.57.70.24
+2022-01-19 10:53:45.677: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:53:45.733: Using 8 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:53:50.301: Processed  500 events in   4.57 s   average event time =   9.14 ms   [ total   500 events     4.57 s ]
+2022-01-19 10:53:55.385: Processed  500 events in   5.09 s   average event time =  10.17 ms   [ total  1000 events     9.66 s ]
+2022-01-19 10:53:55.386: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 9.66 ms
+2022-01-19 10:53:55.706: Benchmark results:
+2022-01-19 10:53:55.706:   READER           1000 events    total time =     0.09 s    average event time =    0.09 ms
+2022-01-19 10:53:55.707:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:55.708:   FTCAL            1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:53:55.709:   FTHODO           1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:53:55.710:   FTEB             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:53:55.711:   DCCR             1000 events    total time =    53.22 s    average event time =   53.22 ms
+2022-01-19 10:53:55.712:   FTOFHB           1000 events    total time =     0.88 s    average event time =    0.88 ms
+2022-01-19 10:53:55.713:   EC               1000 events    total time =     0.96 s    average event time =    0.96 ms
+2022-01-19 10:53:55.714:   CTOF             1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:53:55.715:   CND              1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:53:55.716:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:55.717:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:53:55.718:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:53:55.719:   EBHB             1000 events    total time =     0.44 s    average event time =    0.44 ms
+2022-01-19 10:53:55.719:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:53:55.720:   FTOFTB           1000 events    total time =     0.82 s    average event time =    0.82 ms
+2022-01-19 10:53:55.721:   EBTB             1000 events    total time =     0.41 s    average event time =    0.41 ms
+2022-01-19 10:53:55.721:   RICH             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:53:55.722:   RTPC             1000 events    total time =     0.00 s    average event time =    0.00 ms
+2022-01-19 10:53:55.723:   WRITER           1000 events    total time =     1.99 s    average event time =    1.99 ms
+2022-01-19 10:53:55.723:   TOTAL            1000 events    total time =    60.00 s    average event time =   60.00 ms
+2022-01-19 10:53:55.724: Average processing time  =    9.66 ms
+2022-01-19 10:53:55.724: Total processing time    =    9.66 s
+2022-01-19 10:53:55.725: Total orchestrator time  =   19.37 s
+2022-01-19 10:53:55.725: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:53:57
+ Threads            = 8
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:53:58.122: Waiting for local node...
+2022-01-19 10:53:58.280: Start processing on 129.57.70.24...
+2022-01-19 10:53:58.282: Searching services in 129.57.70.24...
+2022-01-19 10:53:58.348: All services already deployed on 129.57.70.24
+2022-01-19 10:53:58.614: Configuring services on 129.57.70.24...
+2022-01-19 10:54:07.627: All services configured on 129.57.70.24
+2022-01-19 10:54:07.712: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:54:07.768: Using 8 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:54:13.196: Processed  500 events in   5.43 s   average event time =  10.86 ms   [ total   500 events     5.43 s ]
+2022-01-19 10:54:18.486: Processed  500 events in   5.29 s   average event time =  10.58 ms   [ total  1000 events    10.72 s ]
+2022-01-19 10:54:18.486: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 10.72 ms
+2022-01-19 10:54:18.952: Benchmark results:
+2022-01-19 10:54:18.953:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:54:18.954:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:18.956:   FTCAL            1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:54:18.957:   FTHODO           1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:54:18.959:   FTEB             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:54:18.961:   DCCR             1000 events    total time =    56.83 s    average event time =   56.83 ms
+2022-01-19 10:54:18.962:   FTOFHB           1000 events    total time =     0.89 s    average event time =    0.89 ms
+2022-01-19 10:54:18.963:   EC               1000 events    total time =     0.99 s    average event time =    0.99 ms
+2022-01-19 10:54:18.964:   CTOF             1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:54:18.966:   CND              1000 events    total time =     0.56 s    average event time =    0.56 ms
+2022-01-19 10:54:18.967:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:18.968:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:54:18.970:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:54:18.971:   EBHB             1000 events    total time =     0.45 s    average event time =    0.45 ms
+2022-01-19 10:54:18.972:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:18.973:   FTOFTB           1000 events    total time =     0.84 s    average event time =    0.84 ms
+2022-01-19 10:54:18.974:   EBTB             1000 events    total time =     0.43 s    average event time =    0.43 ms
+2022-01-19 10:54:18.975:   RICH             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:54:18.976:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:18.977:   WRITER           1000 events    total time =     2.56 s    average event time =    2.56 ms
+2022-01-19 10:54:18.978:   TOTAL            1000 events    total time =    64.34 s    average event time =   64.34 ms
+2022-01-19 10:54:18.979: Average processing time  =   10.72 ms
+2022-01-19 10:54:18.979: Total processing time    =   10.72 s
+2022-01-19 10:54:18.980: Total orchestrator time  =   21.20 s
+2022-01-19 10:54:18.981: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:54:21
+ Threads            = 10
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:54:21.344: Waiting for local node...
+2022-01-19 10:54:21.496: Start processing on 129.57.70.24...
+2022-01-19 10:54:21.498: Searching services in 129.57.70.24...
+2022-01-19 10:54:21.551: All services already deployed on 129.57.70.24
+2022-01-19 10:54:21.808: Configuring services on 129.57.70.24...
+2022-01-19 10:54:30.354: All services configured on 129.57.70.24
+2022-01-19 10:54:30.396: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:54:30.454: Using 10 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:54:35.228: Processed  500 events in   4.78 s   average event time =   9.55 ms   [ total   500 events     4.78 s ]
+2022-01-19 10:54:39.750: Processed  500 events in   4.52 s   average event time =   9.05 ms   [ total  1000 events     9.30 s ]
+2022-01-19 10:54:39.750: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 9.30 ms
+2022-01-19 10:54:40.327: Benchmark results:
+2022-01-19 10:54:40.328:   READER           1000 events    total time =     0.09 s    average event time =    0.09 ms
+2022-01-19 10:54:40.329:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:40.330:   FTCAL            1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:54:40.331:   FTHODO           1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:54:40.332:   FTEB             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:54:40.333:   DCCR             1000 events    total time =    60.78 s    average event time =   60.78 ms
+2022-01-19 10:54:40.334:   FTOFHB           1000 events    total time =     1.02 s    average event time =    1.02 ms
+2022-01-19 10:54:40.335:   EC               1000 events    total time =     1.11 s    average event time =    1.11 ms
+2022-01-19 10:54:40.336:   CTOF             1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:54:40.338:   CND              1000 events    total time =     0.57 s    average event time =    0.57 ms
+2022-01-19 10:54:40.339:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:40.340:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:54:40.341:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:54:40.342:   EBHB             1000 events    total time =     0.46 s    average event time =    0.46 ms
+2022-01-19 10:54:40.342:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:40.343:   FTOFTB           1000 events    total time =     1.07 s    average event time =    1.07 ms
+2022-01-19 10:54:40.344:   EBTB             1000 events    total time =     0.46 s    average event time =    0.46 ms
+2022-01-19 10:54:40.344:   RICH             1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:54:40.345:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:54:40.346:   WRITER           1000 events    total time =     2.35 s    average event time =    2.35 ms
+2022-01-19 10:54:40.347:   TOTAL            1000 events    total time =    68.64 s    average event time =   68.64 ms
+2022-01-19 10:54:40.348: Average processing time  =    9.30 ms
+2022-01-19 10:54:40.348: Total processing time    =    9.30 s
+2022-01-19 10:54:40.349: Total orchestrator time  =   19.28 s
+2022-01-19 10:54:40.349: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:54:42
+ Threads            = 10
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:54:42.797: Waiting for local node...
+2022-01-19 10:54:42.967: Start processing on 129.57.70.24...
+2022-01-19 10:54:42.968: Searching services in 129.57.70.24...
+2022-01-19 10:54:43.016: All services already deployed on 129.57.70.24
+2022-01-19 10:54:43.273: Configuring services on 129.57.70.24...
+2022-01-19 10:54:52.246: All services configured on 129.57.70.24
+2022-01-19 10:54:52.345: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:54:52.538: Using 10 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:54:57.276: Processed  500 events in   4.74 s   average event time =   9.48 ms   [ total   500 events     4.74 s ]
+2022-01-19 10:55:01.624: Processed  500 events in   4.35 s   average event time =   8.70 ms   [ total  1000 events     9.09 s ]
+2022-01-19 10:55:01.624: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 9.09 ms
+2022-01-19 10:55:02.071: Benchmark results:
+2022-01-19 10:55:02.072:   READER           1000 events    total time =     0.09 s    average event time =    0.09 ms
+2022-01-19 10:55:02.073:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:02.074:   FTCAL            1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:55:02.075:   FTHODO           1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:55:02.076:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:55:02.077:   DCCR             1000 events    total time =    59.63 s    average event time =   59.63 ms
+2022-01-19 10:55:02.078:   FTOFHB           1000 events    total time =     0.95 s    average event time =    0.95 ms
+2022-01-19 10:55:02.078:   EC               1000 events    total time =     1.05 s    average event time =    1.05 ms
+2022-01-19 10:55:02.079:   CTOF             1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:55:02.080:   CND              1000 events    total time =     0.68 s    average event time =    0.68 ms
+2022-01-19 10:55:02.081:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:02.082:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:55:02.082:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:55:02.083:   EBHB             1000 events    total time =     0.48 s    average event time =    0.48 ms
+2022-01-19 10:55:02.084:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:02.085:   FTOFTB           1000 events    total time =     0.90 s    average event time =    0.90 ms
+2022-01-19 10:55:02.085:   EBTB             1000 events    total time =     0.46 s    average event time =    0.46 ms
+2022-01-19 10:55:02.086:   RICH             1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:55:02.087:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:02.087:   WRITER           1000 events    total time =     2.21 s    average event time =    2.21 ms
+2022-01-19 10:55:02.088:   TOTAL            1000 events    total time =    67.19 s    average event time =   67.19 ms
+2022-01-19 10:55:02.088: Average processing time  =    9.09 ms
+2022-01-19 10:55:02.089: Total processing time    =    9.09 s
+2022-01-19 10:55:02.089: Total orchestrator time  =   19.68 s
+2022-01-19 10:55:02.089: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:55:04
+ Threads            = 10
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:55:04.474: Waiting for local node...
+2022-01-19 10:55:04.636: Start processing on 129.57.70.24...
+2022-01-19 10:55:04.637: Searching services in 129.57.70.24...
+2022-01-19 10:55:04.695: All services already deployed on 129.57.70.24
+2022-01-19 10:55:04.954: Configuring services on 129.57.70.24...
+2022-01-19 10:55:14.327: All services configured on 129.57.70.24
+2022-01-19 10:55:14.388: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:55:14.442: Using 10 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:55:19.394: Processed  500 events in   4.95 s   average event time =   9.91 ms   [ total   500 events     4.95 s ]
+2022-01-19 10:55:23.332: Processed  500 events in   3.94 s   average event time =   7.88 ms   [ total  1000 events     8.89 s ]
+2022-01-19 10:55:23.333: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.89 ms
+2022-01-19 10:55:23.825: Benchmark results:
+2022-01-19 10:55:23.825:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:55:23.827:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:23.829:   FTCAL            1000 events    total time =     0.23 s    average event time =    0.23 ms
+2022-01-19 10:55:23.830:   FTHODO           1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:55:23.832:   FTEB             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:55:23.833:   DCCR             1000 events    total time =    58.21 s    average event time =   58.21 ms
+2022-01-19 10:55:23.835:   FTOFHB           1000 events    total time =     0.91 s    average event time =    0.91 ms
+2022-01-19 10:55:23.836:   EC               1000 events    total time =     1.07 s    average event time =    1.07 ms
+2022-01-19 10:55:23.837:   CTOF             1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:55:23.838:   CND              1000 events    total time =     0.59 s    average event time =    0.59 ms
+2022-01-19 10:55:23.840:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:23.841:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:55:23.842:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:55:23.843:   EBHB             1000 events    total time =     0.47 s    average event time =    0.47 ms
+2022-01-19 10:55:23.844:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:23.845:   FTOFTB           1000 events    total time =     0.92 s    average event time =    0.92 ms
+2022-01-19 10:55:23.846:   EBTB             1000 events    total time =     0.47 s    average event time =    0.47 ms
+2022-01-19 10:55:23.847:   RICH             1000 events    total time =     0.18 s    average event time =    0.18 ms
+2022-01-19 10:55:23.848:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:23.849:   WRITER           1000 events    total time =     2.17 s    average event time =    2.17 ms
+2022-01-19 10:55:23.850:   TOTAL            1000 events    total time =    65.76 s    average event time =   65.76 ms
+2022-01-19 10:55:23.851: Average processing time  =    8.89 ms
+2022-01-19 10:55:23.851: Total processing time    =    8.89 s
+2022-01-19 10:55:23.852: Total orchestrator time  =   19.70 s
+2022-01-19 10:55:23.853: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:55:25
+ Threads            = 12
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:55:26.277: Waiting for local node...
+2022-01-19 10:55:26.435: Start processing on 129.57.70.24...
+2022-01-19 10:55:26.436: Searching services in 129.57.70.24...
+2022-01-19 10:55:26.476: All services already deployed on 129.57.70.24
+2022-01-19 10:55:26.732: Configuring services on 129.57.70.24...
+2022-01-19 10:55:35.768: All services configured on 129.57.70.24
+2022-01-19 10:55:35.787: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:55:35.846: Using 12 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:55:40.541: Processed  500 events in   4.70 s   average event time =   9.39 ms   [ total   500 events     4.70 s ]
+2022-01-19 10:55:44.474: Processed  500 events in   3.93 s   average event time =   7.87 ms   [ total  1000 events     8.63 s ]
+2022-01-19 10:55:44.474: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.63 ms
+2022-01-19 10:55:44.815: Benchmark results:
+2022-01-19 10:55:44.815:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:55:44.816:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:44.817:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:55:44.819:   FTHODO           1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 10:55:44.820:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:55:44.821:   DCCR             1000 events    total time =    66.37 s    average event time =   66.37 ms
+2022-01-19 10:55:44.822:   FTOFHB           1000 events    total time =     1.02 s    average event time =    1.02 ms
+2022-01-19 10:55:44.823:   EC               1000 events    total time =     1.15 s    average event time =    1.15 ms
+2022-01-19 10:55:44.824:   CTOF             1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 10:55:44.825:   CND              1000 events    total time =     0.68 s    average event time =    0.68 ms
+2022-01-19 10:55:44.826:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:44.826:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:55:44.827:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:55:44.828:   EBHB             1000 events    total time =     0.49 s    average event time =    0.49 ms
+2022-01-19 10:55:44.829:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:44.829:   FTOFTB           1000 events    total time =     1.03 s    average event time =    1.03 ms
+2022-01-19 10:55:44.830:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:55:44.831:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:55:44.832:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:55:44.832:   WRITER           1000 events    total time =     2.27 s    average event time =    2.27 ms
+2022-01-19 10:55:44.833:   TOTAL            1000 events    total time =    74.43 s    average event time =   74.43 ms
+2022-01-19 10:55:44.833: Average processing time  =    8.63 ms
+2022-01-19 10:55:44.834: Total processing time    =    8.63 s
+2022-01-19 10:55:44.834: Total orchestrator time  =   18.90 s
+2022-01-19 10:55:44.835: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:55:46
+ Threads            = 12
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:55:47.229: Waiting for local node...
+2022-01-19 10:55:47.391: Start processing on 129.57.70.24...
+2022-01-19 10:55:47.392: Searching services in 129.57.70.24...
+2022-01-19 10:55:47.453: All services already deployed on 129.57.70.24
+2022-01-19 10:55:47.711: Configuring services on 129.57.70.24...
+2022-01-19 10:55:56.479: All services configured on 129.57.70.24
+2022-01-19 10:55:56.523: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:55:56.578: Using 12 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:56:01.074: Processed  500 events in   4.50 s   average event time =   9.00 ms   [ total   500 events     4.50 s ]
+2022-01-19 10:56:05.077: Processed  500 events in   4.00 s   average event time =   8.01 ms   [ total  1000 events     8.50 s ]
+2022-01-19 10:56:05.077: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.50 ms
+2022-01-19 10:56:05.348: Benchmark results:
+2022-01-19 10:56:05.349:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:56:05.350:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:05.351:   FTCAL            1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:56:05.352:   FTHODO           1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:56:05.354:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:56:05.355:   DCCR             1000 events    total time =    64.20 s    average event time =   64.20 ms
+2022-01-19 10:56:05.356:   FTOFHB           1000 events    total time =     1.03 s    average event time =    1.03 ms
+2022-01-19 10:56:05.357:   EC               1000 events    total time =     1.21 s    average event time =    1.21 ms
+2022-01-19 10:56:05.358:   CTOF             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:56:05.359:   CND              1000 events    total time =     0.73 s    average event time =    0.73 ms
+2022-01-19 10:56:05.360:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:05.361:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:56:05.361:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:56:05.362:   EBHB             1000 events    total time =     0.56 s    average event time =    0.56 ms
+2022-01-19 10:56:05.363:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:05.364:   FTOFTB           1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:56:05.364:   EBTB             1000 events    total time =     0.50 s    average event time =    0.50 ms
+2022-01-19 10:56:05.365:   RICH             1000 events    total time =     0.22 s    average event time =    0.22 ms
+2022-01-19 10:56:05.366:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:05.366:   WRITER           1000 events    total time =     2.27 s    average event time =    2.27 ms
+2022-01-19 10:56:05.367:   TOTAL            1000 events    total time =    72.44 s    average event time =   72.44 ms
+2022-01-19 10:56:05.367: Average processing time  =    8.50 ms
+2022-01-19 10:56:05.368: Total processing time    =    8.50 s
+2022-01-19 10:56:05.368: Total orchestrator time  =   18.47 s
+2022-01-19 10:56:05.369: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:56:07
+ Threads            = 12
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:56:07.779: Waiting for local node...
+2022-01-19 10:56:07.937: Start processing on 129.57.70.24...
+2022-01-19 10:56:07.939: Searching services in 129.57.70.24...
+2022-01-19 10:56:07.994: All services already deployed on 129.57.70.24
+2022-01-19 10:56:08.249: Configuring services on 129.57.70.24...
+2022-01-19 10:56:17.993: All services configured on 129.57.70.24
+2022-01-19 10:56:18.081: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:56:18.145: Using 12 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:56:22.381: Processed  500 events in   4.24 s   average event time =   8.47 ms   [ total   500 events     4.24 s ]
+2022-01-19 10:56:26.306: Processed  500 events in   3.93 s   average event time =   7.85 ms   [ total  1000 events     8.16 s ]
+2022-01-19 10:56:26.306: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.16 ms
+2022-01-19 10:56:26.600: Benchmark results:
+2022-01-19 10:56:26.600:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:56:26.601:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:26.601:   FTCAL            1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:56:26.602:   FTHODO           1000 events    total time =     0.24 s    average event time =    0.24 ms
+2022-01-19 10:56:26.602:   FTEB             1000 events    total time =     0.06 s    average event time =    0.06 ms
+2022-01-19 10:56:26.603:   DCCR             1000 events    total time =    64.66 s    average event time =   64.66 ms
+2022-01-19 10:56:26.603:   FTOFHB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:56:26.604:   EC               1000 events    total time =     1.10 s    average event time =    1.10 ms
+2022-01-19 10:56:26.604:   CTOF             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:56:26.605:   CND              1000 events    total time =     0.62 s    average event time =    0.62 ms
+2022-01-19 10:56:26.605:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:26.606:   HTCC             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:56:26.606:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:56:26.607:   EBHB             1000 events    total time =     0.48 s    average event time =    0.48 ms
+2022-01-19 10:56:26.607:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:26.608:   FTOFTB           1000 events    total time =     0.97 s    average event time =    0.97 ms
+2022-01-19 10:56:26.608:   EBTB             1000 events    total time =     0.48 s    average event time =    0.48 ms
+2022-01-19 10:56:26.608:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:56:26.609:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:26.609:   WRITER           1000 events    total time =     1.92 s    average event time =    1.92 ms
+2022-01-19 10:56:26.609:   TOTAL            1000 events    total time =    72.24 s    average event time =   72.24 ms
+2022-01-19 10:56:26.610: Average processing time  =    8.16 ms
+2022-01-19 10:56:26.610: Total processing time    =    8.16 s
+2022-01-19 10:56:26.610: Total orchestrator time  =   19.18 s
+2022-01-19 10:56:26.610: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:56:28
+ Threads            = 14
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:56:29.016: Waiting for local node...
+2022-01-19 10:56:29.174: Start processing on 129.57.70.24...
+2022-01-19 10:56:29.175: Searching services in 129.57.70.24...
+2022-01-19 10:56:29.242: All services already deployed on 129.57.70.24
+2022-01-19 10:56:29.500: Configuring services on 129.57.70.24...
+2022-01-19 10:56:38.534: All services configured on 129.57.70.24
+2022-01-19 10:56:38.633: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:56:38.694: Using 14 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:56:43.088: Processed  500 events in   4.40 s   average event time =   8.79 ms   [ total   500 events     4.40 s ]
+2022-01-19 10:56:46.974: Processed  500 events in   3.89 s   average event time =   7.77 ms   [ total  1000 events     8.28 s ]
+2022-01-19 10:56:46.974: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.28 ms
+2022-01-19 10:56:47.368: Benchmark results:
+2022-01-19 10:56:47.369:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:56:47.370:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:47.371:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:56:47.373:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:56:47.374:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:56:47.376:   DCCR             1000 events    total time =    68.59 s    average event time =   68.59 ms
+2022-01-19 10:56:47.378:   FTOFHB           1000 events    total time =     1.04 s    average event time =    1.04 ms
+2022-01-19 10:56:47.379:   EC               1000 events    total time =     1.16 s    average event time =    1.16 ms
+2022-01-19 10:56:47.380:   CTOF             1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 10:56:47.381:   CND              1000 events    total time =     0.67 s    average event time =    0.67 ms
+2022-01-19 10:56:47.382:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:47.384:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:56:47.384:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:56:47.385:   EBHB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 10:56:47.386:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:47.387:   FTOFTB           1000 events    total time =     0.98 s    average event time =    0.98 ms
+2022-01-19 10:56:47.388:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:56:47.389:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:56:47.390:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:56:47.390:   WRITER           1000 events    total time =     2.33 s    average event time =    2.33 ms
+2022-01-19 10:56:47.391:   TOTAL            1000 events    total time =    76.72 s    average event time =   76.72 ms
+2022-01-19 10:56:47.392: Average processing time  =    8.28 ms
+2022-01-19 10:56:47.392: Total processing time    =    8.28 s
+2022-01-19 10:56:47.393: Total orchestrator time  =   18.70 s
+2022-01-19 10:56:47.394: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:56:49
+ Threads            = 14
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:56:49.613: Waiting for local node...
+2022-01-19 10:56:49.762: Start processing on 129.57.70.24...
+2022-01-19 10:56:49.762: Searching services in 129.57.70.24...
+2022-01-19 10:56:49.805: All services already deployed on 129.57.70.24
+2022-01-19 10:56:50.061: Configuring services on 129.57.70.24...
+2022-01-19 10:56:59.357: All services configured on 129.57.70.24
+2022-01-19 10:56:59.426: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:56:59.482: Using 14 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:57:03.816: Processed  500 events in   4.34 s   average event time =   8.67 ms   [ total   500 events     4.34 s ]
+2022-01-19 10:57:07.826: Processed  500 events in   4.01 s   average event time =   8.02 ms   [ total  1000 events     8.35 s ]
+2022-01-19 10:57:07.826: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.35 ms
+2022-01-19 10:57:08.074: Benchmark results:
+2022-01-19 10:57:08.074:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:57:08.075:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:08.075:   FTCAL            1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:57:08.076:   FTHODO           1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:57:08.076:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:57:08.077:   DCCR             1000 events    total time =    69.56 s    average event time =   69.56 ms
+2022-01-19 10:57:08.078:   FTOFHB           1000 events    total time =     1.09 s    average event time =    1.09 ms
+2022-01-19 10:57:08.078:   EC               1000 events    total time =     1.22 s    average event time =    1.22 ms
+2022-01-19 10:57:08.079:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:57:08.079:   CND              1000 events    total time =     0.70 s    average event time =    0.70 ms
+2022-01-19 10:57:08.080:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:08.080:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:57:08.081:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:57:08.081:   EBHB             1000 events    total time =     0.65 s    average event time =    0.65 ms
+2022-01-19 10:57:08.082:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:08.083:   FTOFTB           1000 events    total time =     1.05 s    average event time =    1.05 ms
+2022-01-19 10:57:08.083:   EBTB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 10:57:08.083:   RICH             1000 events    total time =     0.33 s    average event time =    0.33 ms
+2022-01-19 10:57:08.084:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:08.084:   WRITER           1000 events    total time =     2.31 s    average event time =    2.31 ms
+2022-01-19 10:57:08.085:   TOTAL            1000 events    total time =    78.17 s    average event time =   78.17 ms
+2022-01-19 10:57:08.085: Average processing time  =    8.35 ms
+2022-01-19 10:57:08.086: Total processing time    =    8.35 s
+2022-01-19 10:57:08.086: Total orchestrator time  =   18.70 s
+2022-01-19 10:57:08.086: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:57:10
+ Threads            = 14
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:57:10.541: Waiting for local node...
+2022-01-19 10:57:10.699: Start processing on 129.57.70.24...
+2022-01-19 10:57:10.700: Searching services in 129.57.70.24...
+2022-01-19 10:57:10.751: All services already deployed on 129.57.70.24
+2022-01-19 10:57:11.014: Configuring services on 129.57.70.24...
+2022-01-19 10:57:20.255: All services configured on 129.57.70.24
+2022-01-19 10:57:20.281: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:57:20.336: Using 14 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:57:24.703: Processed  500 events in   4.37 s   average event time =   8.74 ms   [ total   500 events     4.37 s ]
+2022-01-19 10:57:28.553: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.22 ms
+2022-01-19 10:57:28.553: Processed  500 events in   3.85 s   average event time =   7.70 ms   [ total  1000 events     8.22 s ]
+2022-01-19 10:57:29.010: Benchmark results:
+2022-01-19 10:57:29.010:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:57:29.011:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:29.012:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:57:29.013:   FTHODO           1000 events    total time =     0.22 s    average event time =    0.22 ms
+2022-01-19 10:57:29.014:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:57:29.015:   DCCR             1000 events    total time =    68.51 s    average event time =   68.51 ms
+2022-01-19 10:57:29.016:   FTOFHB           1000 events    total time =     1.09 s    average event time =    1.09 ms
+2022-01-19 10:57:29.016:   EC               1000 events    total time =     1.21 s    average event time =    1.21 ms
+2022-01-19 10:57:29.017:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:57:29.018:   CND              1000 events    total time =     0.69 s    average event time =    0.69 ms
+2022-01-19 10:57:29.019:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:29.020:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:57:29.021:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:57:29.021:   EBHB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:57:29.022:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:29.023:   FTOFTB           1000 events    total time =     1.05 s    average event time =    1.05 ms
+2022-01-19 10:57:29.023:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:57:29.024:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:57:29.024:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:29.025:   WRITER           1000 events    total time =     2.24 s    average event time =    2.24 ms
+2022-01-19 10:57:29.025:   TOTAL            1000 events    total time =    76.79 s    average event time =   76.79 ms
+2022-01-19 10:57:29.026: Average processing time  =    8.22 ms
+2022-01-19 10:57:29.026: Total processing time    =    8.22 s
+2022-01-19 10:57:29.027: Total orchestrator time  =   18.86 s
+2022-01-19 10:57:29.027: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:57:31
+ Threads            = 16
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:57:31.493: Waiting for local node...
+2022-01-19 10:57:31.655: Start processing on 129.57.70.24...
+2022-01-19 10:57:31.657: Searching services in 129.57.70.24...
+2022-01-19 10:57:31.733: All services already deployed on 129.57.70.24
+2022-01-19 10:57:31.990: Configuring services on 129.57.70.24...
+2022-01-19 10:57:40.506: All services configured on 129.57.70.24
+2022-01-19 10:57:40.558: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:57:40.614: Using 16 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:57:44.970: Processed  500 events in   4.36 s   average event time =   8.72 ms   [ total   500 events     4.36 s ]
+2022-01-19 10:57:48.444: Processed  500 events in   3.48 s   average event time =   6.95 ms   [ total  1000 events     7.83 s ]
+2022-01-19 10:57:48.445: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.83 ms
+2022-01-19 10:57:48.889: Benchmark results:
+2022-01-19 10:57:48.890:   READER           1000 events    total time =     0.11 s    average event time =    0.11 ms
+2022-01-19 10:57:48.891:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:48.892:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:57:48.893:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:57:48.894:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:57:48.896:   DCCR             1000 events    total time =    70.69 s    average event time =   70.69 ms
+2022-01-19 10:57:48.897:   FTOFHB           1000 events    total time =     1.08 s    average event time =    1.08 ms
+2022-01-19 10:57:48.898:   EC               1000 events    total time =     1.26 s    average event time =    1.26 ms
+2022-01-19 10:57:48.899:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:57:48.900:   CND              1000 events    total time =     0.69 s    average event time =    0.69 ms
+2022-01-19 10:57:48.901:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:48.902:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:57:48.902:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:57:48.903:   EBHB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:57:48.904:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:48.905:   FTOFTB           1000 events    total time =     1.01 s    average event time =    1.01 ms
+2022-01-19 10:57:48.906:   EBTB             1000 events    total time =     0.50 s    average event time =    0.50 ms
+2022-01-19 10:57:48.906:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:57:48.907:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:57:48.908:   WRITER           1000 events    total time =     2.06 s    average event time =    2.06 ms
+2022-01-19 10:57:48.908:   TOTAL            1000 events    total time =    78.77 s    average event time =   78.77 ms
+2022-01-19 10:57:48.909: Average processing time  =    7.83 ms
+2022-01-19 10:57:48.910: Total processing time    =    7.83 s
+2022-01-19 10:57:48.910: Total orchestrator time  =   17.78 s
+2022-01-19 10:57:48.911: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:57:50
+ Threads            = 16
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:57:51.129: Waiting for local node...
+2022-01-19 10:57:51.280: Start processing on 129.57.70.24...
+2022-01-19 10:57:51.281: Searching services in 129.57.70.24...
+2022-01-19 10:57:51.321: All services already deployed on 129.57.70.24
+2022-01-19 10:57:51.583: Configuring services on 129.57.70.24...
+2022-01-19 10:58:00.787: All services configured on 129.57.70.24
+2022-01-19 10:58:00.831: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:58:00.886: Using 16 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:58:05.076: Processed  500 events in   4.19 s   average event time =   8.38 ms   [ total   500 events     4.19 s ]
+2022-01-19 10:58:08.596: Processed  500 events in   3.52 s   average event time =   7.04 ms   [ total  1000 events     7.71 s ]
+2022-01-19 10:58:08.597: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.71 ms
+2022-01-19 10:58:08.962: Benchmark results:
+2022-01-19 10:58:08.963:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:58:08.964:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:08.965:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:58:08.967:   FTHODO           1000 events    total time =     0.22 s    average event time =    0.22 ms
+2022-01-19 10:58:08.968:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:58:08.969:   DCCR             1000 events    total time =    69.88 s    average event time =   69.88 ms
+2022-01-19 10:58:08.970:   FTOFHB           1000 events    total time =     1.33 s    average event time =    1.33 ms
+2022-01-19 10:58:08.971:   EC               1000 events    total time =     1.22 s    average event time =    1.22 ms
+2022-01-19 10:58:08.972:   CTOF             1000 events    total time =     0.24 s    average event time =    0.24 ms
+2022-01-19 10:58:08.973:   CND              1000 events    total time =     0.67 s    average event time =    0.67 ms
+2022-01-19 10:58:08.974:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:08.975:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:58:08.976:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:58:08.977:   EBHB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:58:08.978:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:08.979:   FTOFTB           1000 events    total time =     1.07 s    average event time =    1.07 ms
+2022-01-19 10:58:08.980:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:58:08.981:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:58:08.982:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:08.983:   WRITER           1000 events    total time =     1.96 s    average event time =    1.96 ms
+2022-01-19 10:58:08.983:   TOTAL            1000 events    total time =    78.22 s    average event time =   78.22 ms
+2022-01-19 10:58:08.984: Average processing time  =    7.71 ms
+2022-01-19 10:58:08.984: Total processing time    =    7.71 s
+2022-01-19 10:58:08.985: Total orchestrator time  =   18.09 s
+2022-01-19 10:58:08.985: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:58:11
+ Threads            = 16
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:58:11.379: Waiting for local node...
+2022-01-19 10:58:11.541: Start processing on 129.57.70.24...
+2022-01-19 10:58:11.542: Searching services in 129.57.70.24...
+2022-01-19 10:58:11.589: All services already deployed on 129.57.70.24
+2022-01-19 10:58:11.848: Configuring services on 129.57.70.24...
+2022-01-19 10:58:21.278: All services configured on 129.57.70.24
+2022-01-19 10:58:21.283: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:58:21.338: Using 16 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:58:25.301: Processed  500 events in   3.97 s   average event time =   7.93 ms   [ total   500 events     3.97 s ]
+2022-01-19 10:58:29.015: Processed  500 events in   3.71 s   average event time =   7.43 ms   [ total  1000 events     7.68 s ]
+2022-01-19 10:58:29.015: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.68 ms
+2022-01-19 10:58:29.314: Benchmark results:
+2022-01-19 10:58:29.315:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:58:29.317:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:29.319:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:58:29.320:   FTHODO           1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:58:29.322:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:58:29.324:   DCCR             1000 events    total time =    69.99 s    average event time =   69.99 ms
+2022-01-19 10:58:29.325:   FTOFHB           1000 events    total time =     1.12 s    average event time =    1.12 ms
+2022-01-19 10:58:29.327:   EC               1000 events    total time =     1.21 s    average event time =    1.21 ms
+2022-01-19 10:58:29.328:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:58:29.330:   CND              1000 events    total time =     0.69 s    average event time =    0.69 ms
+2022-01-19 10:58:29.331:   BAND             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:58:29.333:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:58:29.334:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:58:29.335:   EBHB             1000 events    total time =     0.54 s    average event time =    0.54 ms
+2022-01-19 10:58:29.336:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:29.337:   FTOFTB           1000 events    total time =     1.04 s    average event time =    1.04 ms
+2022-01-19 10:58:29.338:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:58:29.338:   RICH             1000 events    total time =     0.38 s    average event time =    0.38 ms
+2022-01-19 10:58:29.339:   RTPC             1000 events    total time =     0.09 s    average event time =    0.09 ms
+2022-01-19 10:58:29.340:   WRITER           1000 events    total time =     2.09 s    average event time =    2.09 ms
+2022-01-19 10:58:29.340:   TOTAL            1000 events    total time =    78.42 s    average event time =   78.42 ms
+2022-01-19 10:58:29.341: Average processing time  =    7.68 ms
+2022-01-19 10:58:29.341: Total processing time    =    7.68 s
+2022-01-19 10:58:29.342: Total orchestrator time  =   18.30 s
+2022-01-19 10:58:29.343: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:58:31
+ Threads            = 18
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:58:31.758: Waiting for local node...
+2022-01-19 10:58:31.904: Start processing on 129.57.70.24...
+2022-01-19 10:58:31.905: Searching services in 129.57.70.24...
+2022-01-19 10:58:31.962: All services already deployed on 129.57.70.24
+2022-01-19 10:58:32.227: Configuring services on 129.57.70.24...
+2022-01-19 10:58:41.292: All services configured on 129.57.70.24
+2022-01-19 10:58:41.351: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:58:41.416: Using 18 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:58:45.796: Processed  500 events in   4.38 s   average event time =   8.76 ms   [ total   500 events     4.38 s ]
+2022-01-19 10:58:49.893: Processed  500 events in   4.10 s   average event time =   8.20 ms   [ total  1000 events     8.48 s ]
+2022-01-19 10:58:49.894: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 8.48 ms
+2022-01-19 10:58:50.175: Benchmark results:
+2022-01-19 10:58:50.175:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:58:50.176:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:50.177:   FTCAL            1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:58:50.178:   FTHODO           1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:58:50.179:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:58:50.179:   DCCR             1000 events    total time =    76.71 s    average event time =   76.71 ms
+2022-01-19 10:58:50.180:   FTOFHB           1000 events    total time =     1.18 s    average event time =    1.18 ms
+2022-01-19 10:58:50.181:   EC               1000 events    total time =     1.33 s    average event time =    1.33 ms
+2022-01-19 10:58:50.182:   CTOF             1000 events    total time =     0.17 s    average event time =    0.17 ms
+2022-01-19 10:58:50.183:   CND              1000 events    total time =     0.79 s    average event time =    0.79 ms
+2022-01-19 10:58:50.183:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:50.184:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:58:50.185:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:58:50.185:   EBHB             1000 events    total time =     0.61 s    average event time =    0.61 ms
+2022-01-19 10:58:50.186:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:50.187:   FTOFTB           1000 events    total time =     1.10 s    average event time =    1.10 ms
+2022-01-19 10:58:50.187:   EBTB             1000 events    total time =     0.55 s    average event time =    0.55 ms
+2022-01-19 10:58:50.188:   RICH             1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:58:50.188:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:58:50.189:   WRITER           1000 events    total time =     2.61 s    average event time =    2.61 ms
+2022-01-19 10:58:50.189:   TOTAL            1000 events    total time =    85.87 s    average event time =   85.87 ms
+2022-01-19 10:58:50.190: Average processing time  =    8.48 ms
+2022-01-19 10:58:50.190: Total processing time    =    8.48 s
+2022-01-19 10:58:50.190: Total orchestrator time  =   18.78 s
+2022-01-19 10:58:50.191: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:58:52
+ Threads            = 18
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:58:52.837: Waiting for local node...
+2022-01-19 10:58:52.984: Start processing on 129.57.70.24...
+2022-01-19 10:58:52.985: Searching services in 129.57.70.24...
+2022-01-19 10:58:53.040: All services already deployed on 129.57.70.24
+2022-01-19 10:58:53.302: Configuring services on 129.57.70.24...
+2022-01-19 10:59:02.811: All services configured on 129.57.70.24
+2022-01-19 10:59:02.892: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:59:02.960: Using 18 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:59:06.947: Processed  500 events in   3.99 s   average event time =   7.98 ms   [ total   500 events     3.99 s ]
+2022-01-19 10:59:10.916: Processed  500 events in   3.97 s   average event time =   7.94 ms   [ total  1000 events     7.96 s ]
+2022-01-19 10:59:10.917: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.96 ms
+2022-01-19 10:59:11.214: Benchmark results:
+2022-01-19 10:59:11.214:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 10:59:11.215:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:11.216:   FTCAL            1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:59:11.217:   FTHODO           1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 10:59:11.218:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:59:11.219:   DCCR             1000 events    total time =    74.22 s    average event time =   74.22 ms
+2022-01-19 10:59:11.219:   FTOFHB           1000 events    total time =     1.06 s    average event time =    1.06 ms
+2022-01-19 10:59:11.220:   EC               1000 events    total time =     1.27 s    average event time =    1.27 ms
+2022-01-19 10:59:11.221:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:59:11.222:   CND              1000 events    total time =     0.79 s    average event time =    0.79 ms
+2022-01-19 10:59:11.223:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:11.223:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:59:11.224:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:59:11.225:   EBHB             1000 events    total time =     0.54 s    average event time =    0.54 ms
+2022-01-19 10:59:11.225:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:11.226:   FTOFTB           1000 events    total time =     1.10 s    average event time =    1.10 ms
+2022-01-19 10:59:11.226:   EBTB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:59:11.227:   RICH             1000 events    total time =     0.24 s    average event time =    0.24 ms
+2022-01-19 10:59:11.227:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:11.228:   WRITER           1000 events    total time =     2.31 s    average event time =    2.31 ms
+2022-01-19 10:59:11.228:   TOTAL            1000 events    total time =    82.81 s    average event time =   82.81 ms
+2022-01-19 10:59:11.229: Average processing time  =    7.96 ms
+2022-01-19 10:59:11.230: Total processing time    =    7.96 s
+2022-01-19 10:59:11.230: Total orchestrator time  =   18.69 s
+2022-01-19 10:59:11.231: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:59:13
+ Threads            = 18
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:59:13.756: Waiting for local node...
+2022-01-19 10:59:13.914: Start processing on 129.57.70.24...
+2022-01-19 10:59:13.916: Searching services in 129.57.70.24...
+2022-01-19 10:59:13.984: All services already deployed on 129.57.70.24
+2022-01-19 10:59:14.246: Configuring services on 129.57.70.24...
+2022-01-19 10:59:23.372: All services configured on 129.57.70.24
+2022-01-19 10:59:23.448: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:59:23.503: Using 18 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:59:27.554: Processed  500 events in   4.05 s   average event time =   8.10 ms   [ total   500 events     4.05 s ]
+2022-01-19 10:59:31.009: Processed  500 events in   3.46 s   average event time =   6.91 ms   [ total  1000 events     7.51 s ]
+2022-01-19 10:59:31.010: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.51 ms
+2022-01-19 10:59:31.472: Benchmark results:
+2022-01-19 10:59:31.473:   READER           1000 events    total time =     0.10 s    average event time =    0.10 ms
+2022-01-19 10:59:31.474:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:31.474:   FTCAL            1000 events    total time =     0.14 s    average event time =    0.14 ms
+2022-01-19 10:59:31.475:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:59:31.476:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:59:31.477:   DCCR             1000 events    total time =    71.05 s    average event time =   71.05 ms
+2022-01-19 10:59:31.477:   FTOFHB           1000 events    total time =     1.12 s    average event time =    1.12 ms
+2022-01-19 10:59:31.478:   EC               1000 events    total time =     1.24 s    average event time =    1.24 ms
+2022-01-19 10:59:31.479:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:59:31.479:   CND              1000 events    total time =     0.70 s    average event time =    0.70 ms
+2022-01-19 10:59:31.480:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:31.481:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:59:31.482:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:59:31.482:   EBHB             1000 events    total time =     0.55 s    average event time =    0.55 ms
+2022-01-19 10:59:31.483:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:31.484:   FTOFTB           1000 events    total time =     1.05 s    average event time =    1.05 ms
+2022-01-19 10:59:31.484:   EBTB             1000 events    total time =     0.54 s    average event time =    0.54 ms
+2022-01-19 10:59:31.485:   RICH             1000 events    total time =     0.23 s    average event time =    0.23 ms
+2022-01-19 10:59:31.485:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:31.486:   WRITER           1000 events    total time =     2.00 s    average event time =    2.00 ms
+2022-01-19 10:59:31.486:   TOTAL            1000 events    total time =    79.21 s    average event time =   79.21 ms
+2022-01-19 10:59:31.487: Average processing time  =    7.51 ms
+2022-01-19 10:59:31.487: Total processing time    =    7.51 s
+2022-01-19 10:59:31.488: Total orchestrator time  =   18.09 s
+2022-01-19 10:59:31.488: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:59:33
+ Threads            = 20
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:59:33.953: Waiting for local node...
+2022-01-19 10:59:34.114: Start processing on 129.57.70.24...
+2022-01-19 10:59:34.115: Searching services in 129.57.70.24...
+2022-01-19 10:59:34.175: All services already deployed on 129.57.70.24
+2022-01-19 10:59:34.439: Configuring services on 129.57.70.24...
+2022-01-19 10:59:44.365: All services configured on 129.57.70.24
+2022-01-19 10:59:44.420: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 10:59:44.478: Using 20 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 10:59:48.304: Processed  500 events in   3.83 s   average event time =   7.66 ms   [ total   500 events     3.83 s ]
+2022-01-19 10:59:52.063: Processed  500 events in   3.76 s   average event time =   7.52 ms   [ total  1000 events     7.59 s ]
+2022-01-19 10:59:52.064: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.59 ms
+2022-01-19 10:59:52.444: Benchmark results:
+2022-01-19 10:59:52.445:   READER           1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:59:52.446:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:52.447:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 10:59:52.448:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:59:52.450:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 10:59:52.451:   DCCR             1000 events    total time =    78.65 s    average event time =   78.65 ms
+2022-01-19 10:59:52.452:   FTOFHB           1000 events    total time =     1.46 s    average event time =    1.46 ms
+2022-01-19 10:59:52.453:   EC               1000 events    total time =     1.32 s    average event time =    1.32 ms
+2022-01-19 10:59:52.454:   CTOF             1000 events    total time =     0.16 s    average event time =    0.16 ms
+2022-01-19 10:59:52.454:   CND              1000 events    total time =     0.72 s    average event time =    0.72 ms
+2022-01-19 10:59:52.455:   BAND             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 10:59:52.456:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 10:59:52.457:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 10:59:52.458:   EBHB             1000 events    total time =     0.52 s    average event time =    0.52 ms
+2022-01-19 10:59:52.459:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:52.459:   FTOFTB           1000 events    total time =     1.02 s    average event time =    1.02 ms
+2022-01-19 10:59:52.460:   EBTB             1000 events    total time =     0.55 s    average event time =    0.55 ms
+2022-01-19 10:59:52.461:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 10:59:52.461:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 10:59:52.462:   WRITER           1000 events    total time =     2.07 s    average event time =    2.07 ms
+2022-01-19 10:59:52.463:   TOTAL            1000 events    total time =    87.28 s    average event time =   87.28 ms
+2022-01-19 10:59:52.463: Average processing time  =    7.59 ms
+2022-01-19 10:59:52.464: Total processing time    =    7.59 s
+2022-01-19 10:59:52.464: Total orchestrator time  =   18.89 s
+2022-01-19 10:59:52.465: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 10:59:54
+ Threads            = 20
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 10:59:54.855: Waiting for local node...
+2022-01-19 10:59:55.016: Start processing on 129.57.70.24...
+2022-01-19 10:59:55.016: Searching services in 129.57.70.24...
+2022-01-19 10:59:55.059: All services already deployed on 129.57.70.24
+2022-01-19 10:59:55.319: Configuring services on 129.57.70.24...
+2022-01-19 11:00:04.551: All services configured on 129.57.70.24
+2022-01-19 11:00:04.579: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 11:00:04.634: Using 20 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 11:00:08.599: Processed  500 events in   3.97 s   average event time =   7.93 ms   [ total   500 events     3.97 s ]
+2022-01-19 11:00:11.819: Processed  500 events in   3.22 s   average event time =   6.44 ms   [ total  1000 events     7.19 s ]
+2022-01-19 11:00:11.820: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.19 ms
+2022-01-19 11:00:12.201: Benchmark results:
+2022-01-19 11:00:12.201:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 11:00:12.202:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:12.203:   FTCAL            1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 11:00:12.204:   FTHODO           1000 events    total time =     0.21 s    average event time =    0.21 ms
+2022-01-19 11:00:12.205:   FTEB             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 11:00:12.206:   DCCR             1000 events    total time =    67.21 s    average event time =   67.21 ms
+2022-01-19 11:00:12.207:   FTOFHB           1000 events    total time =     1.10 s    average event time =    1.10 ms
+2022-01-19 11:00:12.207:   EC               1000 events    total time =     1.17 s    average event time =    1.17 ms
+2022-01-19 11:00:12.208:   CTOF             1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 11:00:12.209:   CND              1000 events    total time =     0.67 s    average event time =    0.67 ms
+2022-01-19 11:00:12.209:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:12.210:   HTCC             1000 events    total time =     0.04 s    average event time =    0.04 ms
+2022-01-19 11:00:12.211:   LTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 11:00:12.211:   EBHB             1000 events    total time =     0.50 s    average event time =    0.50 ms
+2022-01-19 11:00:12.212:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:12.212:   FTOFTB           1000 events    total time =     0.96 s    average event time =    0.96 ms
+2022-01-19 11:00:12.213:   EBTB             1000 events    total time =     0.48 s    average event time =    0.48 ms
+2022-01-19 11:00:12.213:   RICH             1000 events    total time =     0.19 s    average event time =    0.19 ms
+2022-01-19 11:00:12.214:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:12.214:   WRITER           1000 events    total time =     2.03 s    average event time =    2.03 ms
+2022-01-19 11:00:12.215:   TOTAL            1000 events    total time =    75.05 s    average event time =   75.05 ms
+2022-01-19 11:00:12.215: Average processing time  =    7.19 ms
+2022-01-19 11:00:12.216: Total processing time    =    7.19 s
+2022-01-19 11:00:12.216: Total orchestrator time  =   17.69 s
+2022-01-19 11:00:12.217: Processing is complete.
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+==========================================
+            CLARA Orchestrator            
+==========================================
+ Front-end          = 129.57.70.24_java
+ Start time         = 2022-01-19 11:00:14
+ Threads            = 20
+
+ Input directory    = /local/scratch/gurjyan/work/clara/user_data/data/input
+ Output directory   = /local/scratch/gurjyan/work/clara/user_data/data/output
+ Output file prefix = out_
+ Number of files  = 1
+==========================================
+2022-01-19 11:00:14.730: Waiting for local node...
+2022-01-19 11:00:14.892: Start processing on 129.57.70.24...
+2022-01-19 11:00:14.894: Searching services in 129.57.70.24...
+2022-01-19 11:00:14.948: All services already deployed on 129.57.70.24
+2022-01-19 11:00:15.204: Configuring services on 129.57.70.24...
+2022-01-19 11:00:24.584: All services configured on 129.57.70.24
+2022-01-19 11:00:24.605: Opening file clas_005038.1231.hipo on 129.57.70.24
+2022-01-19 11:00:24.663: Using 20 cores on 129.57.70.24 to process 1000 events of clas_005038.1231.hipo [1/1]
+2022-01-19 11:00:28.535: Processed  500 events in   3.88 s   average event time =   7.75 ms   [ total   500 events     3.88 s ]
+2022-01-19 11:00:32.337: Processed  500 events in   3.80 s   average event time =   7.61 ms   [ total  1000 events     7.68 s ]
+2022-01-19 11:00:32.338: Finished file clas_005038.1231.hipo on 129.57.70.24. Average event time = 7.68 ms
+2022-01-19 11:00:32.629: Benchmark results:
+2022-01-19 11:00:32.630:   READER           1000 events    total time =     0.12 s    average event time =    0.12 ms
+2022-01-19 11:00:32.630:   MAGFIELDS        1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:32.631:   FTCAL            1000 events    total time =     0.13 s    average event time =    0.13 ms
+2022-01-19 11:00:32.632:   FTHODO           1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 11:00:32.633:   FTEB             1000 events    total time =     0.05 s    average event time =    0.05 ms
+2022-01-19 11:00:32.633:   DCCR             1000 events    total time =    72.67 s    average event time =   72.67 ms
+2022-01-19 11:00:32.634:   FTOFHB           1000 events    total time =     1.06 s    average event time =    1.06 ms
+2022-01-19 11:00:32.635:   EC               1000 events    total time =     1.34 s    average event time =    1.34 ms
+2022-01-19 11:00:32.635:   CTOF             1000 events    total time =     0.15 s    average event time =    0.15 ms
+2022-01-19 11:00:32.636:   CND              1000 events    total time =     0.67 s    average event time =    0.67 ms
+2022-01-19 11:00:32.637:   BAND             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:32.637:   HTCC             1000 events    total time =     0.03 s    average event time =    0.03 ms
+2022-01-19 11:00:32.638:   LTCC             1000 events    total time =     0.02 s    average event time =    0.02 ms
+2022-01-19 11:00:32.638:   EBHB             1000 events    total time =     0.49 s    average event time =    0.49 ms
+2022-01-19 11:00:32.639:   FMT              1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:32.639:   FTOFTB           1000 events    total time =     1.00 s    average event time =    1.00 ms
+2022-01-19 11:00:32.640:   EBTB             1000 events    total time =     0.51 s    average event time =    0.51 ms
+2022-01-19 11:00:32.640:   RICH             1000 events    total time =     0.20 s    average event time =    0.20 ms
+2022-01-19 11:00:32.641:   RTPC             1000 events    total time =     0.01 s    average event time =    0.01 ms
+2022-01-19 11:00:32.641:   WRITER           1000 events    total time =     2.08 s    average event time =    2.08 ms
+2022-01-19 11:00:32.642:   TOTAL            1000 events    total time =    80.75 s    average event time =   80.75 ms
+2022-01-19 11:00:32.642: Average processing time  =    7.68 ms
+2022-01-19 11:00:32.642: Total processing time    =    7.68 s
+2022-01-19 11:00:32.643: Total orchestrator time  =   18.26 s
+2022-01-19 11:00:32.643: Processing is complete.

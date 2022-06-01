@@ -1,0 +1,2 @@
+set maxEvents 25000
+run local

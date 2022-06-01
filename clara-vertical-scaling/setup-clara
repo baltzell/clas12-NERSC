@@ -1,0 +1,16 @@
+
+unsetenv CLASSPATH
+unsetenv JAVA_HOME
+
+cd myClara
+setenv CLARA_HOME `pwd`
+cd -
+cd user_data
+setenv CLARA_USER_DATA `pwd`
+cd -
+
+setenv CCDB_CONNECTION sqlite:///$CLARA_USER_DATA/data/ccdb_2022-01-09.sqlite
+setenv RCDB_CONNECTION sqlite:///$CLARA_USER_DATA/data/ccdb_2022-01-09.sqlite
+setenv CLAS12DIR $CLARA_HOME/plugins/clas12
+
+setenv JAVA_TOOL_OPTIONS "-XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler"

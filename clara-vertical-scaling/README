@@ -1,0 +1,73 @@
+unpack clara-clas12.tar.gz
+
+source clara-setup
+
+Note: source this file in each shell you are using for these benchmark tests.
+
+Interactive benchmarking 
+==========================
+This will give you a single performance number for each service in the application, and for an entire application.
+For total application 2 numbers will be provided: single threaded performance and perfomance scaled vertically over all available cores (including hyper-treaded cores).
+
+Type in one of the shells:
+> $CLARA_HOME/bin/clara-shell bm.clara
+
+This will start an interactive shell, that will start processing a CLAS12 real row data file.
+Benchmarking results will be presented in the Clara CLI shell as well as in the $CLARA_USER_DATA/log directory.The numbers that you are interested are: "average event time" (application single threaded performance), and "average processing time" (performance of the application, vertically scaled over all available cores). E.g. 
+
+2022-01-14 17:06:03.610: TOTAL 5000 events total time = 4886.41 s  average event time = 977.28 ms (single thread performance)
+2022-01-14 17:06:03.611: Average processing time  =  50.86 ms (multi-threaded performance)
+
+Note: This will take about 10min on 10 hyper-threaded core node. 
+
+Vertical scaling curve
+=================
+To run a verical caling test you need to have 2 shell sessions open on the node.
+Note: Clara presents it's own workflow-manager, so the second shell is for Clara
+application orchestrator.
+
+Type in the shell 1:
+
+> $CLARA_HOME/bin/j_dpe
+
+Type in the shell 2:
+
+> ./clara-vertical-scaling/stress/multicore-test -e 1000 -s 2 $CLARA_USER_DATA/config/scaling.yaml $CLARA_USER_DATA/data/input/clas_005038.1231.hipo $CLARA_USER_DATA/data/output/out_clas_005038.1231.hipo
+
+Note: This will take about 15min on a 10 hyper-threaded core node.
+
+Results
+---------
+
+The `multicore-test` creates a `results.csv` file in the log directory with
+the average reconstruction times, that can be used to generate a scaling plot.
+It also saves the full log of all orchestrator runs in the `run.log` file.
+
+To get execution times for all services, and generate a Jupyter notebook,
+the `run.log` file can be parsed using the Python scripts
+distributed in the `ana` directory.
+
+1. Create a Python virtual environment and install the required packages:
+
+        $ pip install -r requirements.txt
+
+2. Get execution times for all services in CSV format:
+
+        $ ./ana/multicore-results <run.log>
+
+3. (Optionally) Use a [Jupyter notebook][jupyter_nb] to analyse data:
+
+    1.  Generate a notebook with the entire data and scaling plots:
+
+            $ ./ana/multicore-results --nb-file <notebook.ipynb> <run.log>
+
+    2.  Start the Jupyter Notebook App:
+
+            $ jupyter notebook
+
+    3.  Open the generated notebook file and [run all cells][exec_nb]
+        from the menu _Cell -> Run All_.
+
+
+
+       
