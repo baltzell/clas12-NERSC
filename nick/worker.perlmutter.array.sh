@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 #SBATCH -N 1
 #SBATCH -C cpu
 #SBATCH -q regular
