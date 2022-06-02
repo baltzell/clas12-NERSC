@@ -18,7 +18,7 @@ expopts='-XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
 v=`$CLARA_HOME/lib/clara/run-java -version 2>&1 | head -1 | awk '{print$3}' | sed 's/"//g' | awk -F\. '{print$1}'`
 if [ $v -ge 11 ]
 then
-    JAVA_OPTS="$JAVA_OPTS $expopts" 
+    JAVA_OPTS="$JAVA_OPTS $expopts"
 fi
 
 outprefix=rec_
@@ -76,6 +76,7 @@ done
 $CLARA_HOME/lib/clara/run-clara \
         -i . \
         -o . \
+        -H 127.0.0.1 \
         -z $outprefix \
         -x $logdir \
         -t $threads \

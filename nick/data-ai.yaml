@@ -45,8 +45,8 @@ services:
     name: DCTB
   - class: org.jlab.service.fmt.FMTEngine
     name: FMT
-  - class: org.jlab.rec.cvt.services.CVTSecondPassEngine
-    name: CVTSP
+    #  - class: org.jlab.rec.cvt.services.CVTSecondPassEngine
+    #name: CVTSP
   - class: org.jlab.service.ftof.FTOFTBEngine
     name: FTOFTB
   - class: org.jlab.service.eb.EBTBEngine
@@ -62,13 +62,13 @@ configuration:
   io-services:
     writer:
       compression: 2
-#      schema_dir: "absolute-path-to-schema-folder"
+      schema_dir: "/cvmfs/oasis.opensciencegrid.org/jlab/hallb/clas12/soft/linux-64/clara/5.0.2_8.0.0/plugins/clas12/etc/bankdefs/clas12"
 #      for example:
 #      schema_dir: "/home/clas12-1/chef/myClara/plugins/clas12/etc/bankdefs/dst"
   services:
     MAGFIELDS:
-      magfieldSolenoidMap: Symm_solenoid_r601_phi1_z1201_13June2018.dat
-      magfieldTorusMap: Full_torus_r251_phi181_z251_08May2018.dat
+      magfieldSolenoidMap: ../../../../../../../../../soft/noarch/data/magfield/binary/Symm_solenoid_r601_phi1_z1201_13June2018.dat
+      magfieldTorusMap: ../../../../../../../../../soft/noarch/data/magfield/binary/Full_torus_r251_phi181_z251_08May2018.dat
     DCCR:
       dcT2DFunc: "Polynomial"
       dcWireDistortion: "true"  
